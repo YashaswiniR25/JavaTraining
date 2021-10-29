@@ -7,7 +7,7 @@ public class ArrayListAssignment {
 	public static void Calculate(ArrayList<Integer> obj) {
 		double sum=0;
 		for(int i=0;i<obj.size();i++) {
-			sum=sum+i;
+			sum=sum+obj.get(i);
 		}
 		System.out.println("Sum : "+sum);
 		double Mean=sum/obj.size();
@@ -26,13 +26,12 @@ public class ArrayListAssignment {
 		}
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		ArrayList<Integer> obj=new ArrayList<Integer>();
-		obj.add(1);
-		obj.add(5);
+		obj.add(4);
 		obj.add(3);
-		obj.add(8);
-		obj.add(5);
+		obj.add(2);
+		obj.add(1);
 		System.out.println(obj);
 		Calculate(obj);
 		System.out.println(Median(obj));
